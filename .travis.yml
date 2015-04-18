@@ -1,3 +1,5 @@
 lenguage: objective-c
+before_install:
+ - brew update
 script:
  - xctool test -project HelloWorld.xcodeproj -scheme HelloWorld -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO 
